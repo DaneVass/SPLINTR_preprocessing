@@ -24,3 +24,5 @@ For more information see Fennell and Vassiliadis et al., [2021](https://www.natu
 - Perform QC and analysis of Starcode output in R using `library-analysis-template.Rmd`
 
 - Output will include a fasta file of barcode sequences within each library which can be used to generate a reference library for subsequent barcode alignment.
+
+- See example output in `library-analysis-template.html` and `test`
