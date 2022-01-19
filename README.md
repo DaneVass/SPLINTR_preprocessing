@@ -1,6 +1,6 @@
 # SPLINTR Barcode Library Pre-processing. 
 
-For more information: (Fennell and Vassiliadis et al., [2021](https://www.nature.com/articles/s41586-021-04206-7))
+For more information see Fennell and Vassiliadis et al., [2021](https://www.nature.com/articles/s41586-021-04206-7)
 
 ## Procedure to generate SPLINTR reference barcode libraries:
 
