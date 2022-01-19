@@ -1,4 +1,3 @@
-
 """ 
 extractBarcodeReads.py
 
@@ -109,7 +108,7 @@ if options.regexPattern is not None:
     barcode_re = re.compile(regex)
 
 else:
-    print('no regex pattern given. defaulting to SPLINTR pattern: ([ATCG][ATCG][GC][AT][GC][ATCG][ATCG][AT][GC][AT]){3,6}')
+    print('no regex pattern given. defaulting to SPLINTR GFP pattern: ([ATCG][ATCG][GC][AT][GC][ATCG][ATCG][AT][GC][AT]){3,6}')
     regex = "([ATCG][ATCG][GC][AT][GC][ATCG][ATCG][AT][GC][AT]){3,6}"
     barcode_re = re.compile(regex)
 

@@ -23,7 +23,7 @@ for file in $(find ../flash -name '*extendedFrags.fastq.gz' -type 'f')
         #echo $file
         #echo $outname
         #echo $dir
-        cmd="sbatch trim_stagger.sbatch $file ${OUTDIR}/${outname}"
+        cmd="sbatch filter_barcodes.sbatch $file ${OUTDIR}/${outname}"
         echo $cmd
 
         # uncomment the below line once you validate that the command works as expected.
