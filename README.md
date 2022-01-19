@@ -21,6 +21,6 @@ For more information see Fennell and Vassiliadis et al., [2021](https://www.natu
 
 - Run Starcode on the extracted barcode reads to cluster barcodes according to Edit distance
 
-- Perform QC and analysis of Starcode output in R using `library-analysis=template.Rmd`
+- Perform QC and analysis of Starcode output in R using `library-analysis-template.Rmd`
 
 - Output will include a fasta file of barcode sequences within each library which can be used to generate a reference library for subsequent barcode alignment.
