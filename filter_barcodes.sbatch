@@ -8,8 +8,8 @@
 #SBATCH --mem=128GB
 #SBATCH --mail-user=''
 #SBATCH --mail-type=ALL
-#SBATCH --output='trim_stagger-%j.out'
-#SBATCH --error='trim_stagger-%j.error'
+#SBATCH --output='extract-barcodes-%j.out'
+#SBATCH --error='extract-barcodes-%j.error'
 #SBATCH --partition=prod
 
 
