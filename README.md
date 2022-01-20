@@ -1,15 +1,15 @@
 # SPLINTR Barcode Library Pre-processing. 
 
-For more information see Fennell and Vassiliadis et al., [2021](https://www.nature.com/articles/s41586-021-04206-7)
+For more information see the paper [Fennell and Vassiliadis et al., 2021](https://www.nature.com/articles/s41586-021-04206-7)
 
 ## Procedure to generate SPLINTR reference barcode libraries:
 
 - Amplify SPLINTR barcodes from each library plasmid pool by PCR (see attached PCR protocol).
   - Perform PCRs in technical duplicate
 
-- Sequence library pool to a depth of at least 200-250M reads (~100X coverage) per PCR reaction.
+- Sequence library pool to a depth of at least 100-200M reads (~100X coverage for a 1 million barcode library) per PCR reaction.
   - Lower diversity libraries will require less sequencing. 
-  - Ideally perform single end 150bp or paired end 75bp, DO NOT perform single end 75bp as reads will not cover the entire barcode.	
+  - Ideally perform single end 150bp or paired end 75bp sequencing, DO NOT perform single end 75bp as reads will not cover the entire barcode.	
 
 - Generate a text file containing full path of each library fastq file. See example `fastqs.txt`
 
@@ -17,9 +17,9 @@ For more information see Fennell and Vassiliadis et al., [2021](https://www.natu
 
 - **[OPTIONAL]** if paired end 75bp sequencing was performed. Run `flash.sh` to combine paried-end reads into a single overlapped read that covers the entire barcode region.
 
-- Extract barcode reads from fastq files using `trim_stagger.sbatch` which submits `extractBarcodeReads.py` scripts to a SLURM HPC
+- Extract barcode reads from fastq files using `filter_barcodes.sbatch` which submits `extractBarcodeReads.py` scripts to a SLURM HPC
 
-- Run Starcode on the extracted barcode reads to cluster barcodes according to Edit distance
+- Run Starcode on the extracted barcode reads to cluster barcodes according to Edit distance. See `starcode.sbatch`
 
 - Perform QC and analysis of Starcode output in R using `library-analysis-template.Rmd`
 
